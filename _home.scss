@@ -1,0 +1,398 @@
+.header {
+    @include header;
+}
+
+main {
+    max-width: 100vw;
+
+    .slider {
+        margin: 50px auto;
+        overflow: hidden;
+        max-width: 1200px;
+
+        .slides {
+            width: 300%;
+            height: 600px;
+            display: flex;
+
+            input {
+                display: none;
+            }
+
+            #radio1:checked~.first {
+                margin-left: 0;
+            }
+
+            #radio1:checked~.navigation .auto-btn1 {
+                background-color: $cor-branco;
+            }
+
+            #radio2:checked~.first {
+                margin-left: -50%;
+            }
+
+            #radio2:checked~.navigation .auto-btn2 {
+                background-color: $cor-branco;
+            }
+
+            #radio3:checked~.first {
+                margin-left: -200%;
+            }
+
+            #radio3:checked~.navigation .auto-btn3 {
+                background-color: $cor-branco;
+            }
+
+            .slide {
+                width: 300%;
+                height: 100%;
+                position: relative;
+                transition: 1s;
+
+                h2 {
+                    position: absolute;
+                    top: 30%;
+                    left: 50px;
+                    font-size: 4rem;
+                    font-weight: 600;
+                    color: $cor-branco;
+                    z-index: 999;
+                }
+
+                p {
+                    position: absolute;
+                    top: 60%;
+                    left: 50px;
+                    font-size: 1rem;
+                    font-weight: 500;
+                    color: $cor-branco;
+                    z-index: 999;
+                }
+
+                a {
+                    @include a-default ($cor-primaria, $cor-branco, auto);
+                    position: absolute;
+                    top: 75%;
+                    left: 50px;
+                    z-index: 999;
+                }
+
+                a:hover {
+                    background-color: $cor-secundaria;
+                    color: $cor-primaria;
+                }
+
+                img {
+                    width: 1200px;
+                    filter: brightness(60%);
+                }
+            }
+
+            .navigation {
+                position: absolute;
+                left: 0;
+                width: 100%;
+                margin-top: 561px;
+                display: flex;
+                gap: 22px;
+                justify-content: center;
+
+                div {
+                    padding: 5px;
+                    border-radius: 10px;
+                    cursor: pointer;
+                    transition: 1s;
+                }
+            }
+        }
+
+        .manual__navigation {
+            position: absolute;
+            width: 100%;
+            left: 0;
+            margin-top: -40px;
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+
+            .manual-btn {
+                border: 1px solid $cor-branco;
+                padding: 5px;
+                border-radius: 10px;
+                cursor: pointer;
+                transition: 1s;
+            }
+
+            .manual-btn:hover {
+                background-color: $cor-branco;
+            }
+        }
+    }
+}
+
+
+@media (max-width: 768px) {
+    .header {
+        @include header-520;
+    }
+
+    main {
+        max-width: 100vw;
+
+        .slider {
+            margin: 30px auto;
+            overflow: hidden;
+            max-width: 100vw;
+
+            .slides {
+                width: 100%;
+                height: auto;
+                display: flex;
+                justify-content: space-between;
+
+                input {
+                    display: none;
+                }
+
+                #radio1:checked~.first {
+                    margin-left: 0;
+                }
+
+                #radio1:checked~.navigation .auto-btn1 {
+                    background-color: $cor-branco;
+                }
+
+                #radio2:checked~.first {
+                    margin-left: -100%;
+                }
+
+                #radio2:checked~.navigation .auto-btn2 {
+                    background-color: $cor-branco;
+                }
+
+                #radio3:checked~.first {
+                    margin-left: -200%;
+                }
+
+                #radio3:checked~.navigation .auto-btn3 {
+                    background-color: $cor-branco;
+                }
+
+                .slide {
+                    width: 100%;
+                    height: 100%;
+                    position: relative;
+                    transition: 1s;
+
+                    h2 {
+                        position: absolute;
+                        top: 20%;
+                        left: 50px;
+                        @include h2-default;
+                        color: $cor-branco;
+                        z-index: 998;
+                    }
+
+                    p {
+                        position: absolute;
+                        top: 45%;
+                        left: 50px;
+                        @include p-default;
+                        z-index: 998;
+                    }
+
+                    a {
+                        @include a-default ($cor-primaria, $cor-branco, auto);
+                        position: absolute;
+                        top: 65%;
+                        left: 50px;
+                        z-index: 998;
+                    }
+
+                    a:hover {
+                        background-color: $cor-secundaria;
+                        color: $cor-primaria;
+                    }
+
+                    img {
+                        width: 100vw;
+                        filter: brightness(78%);
+                    }
+                }
+
+                .navigation {
+                    position: absolute;
+                    left: 0;
+                    width: 100%;
+                    margin-top: 322px;
+                    display: flex;
+                    gap: 22px;
+                    justify-content: center;
+
+                    div {
+                        padding: 5px;
+                        border-radius: 10px;
+                        cursor: pointer;
+                        transition: 1s;
+                    }
+                }
+            }
+
+            .manual__navigation {
+                position: absolute;
+                width: 100%;
+                left: 0;
+                margin-top: -30px;
+                display: flex;
+                gap: 20px;
+                justify-content: center;
+
+                .manual-btn {
+                    border: 1px solid $cor-branco;
+                    padding: 5px;
+                    border-radius: 10px;
+                    cursor: pointer;
+                    transition: 1s;
+                }
+
+                .manual-btn:hover {
+                    background-color: $cor-branco;
+                }
+            }
+        }
+    }
+}
+
+
+
+@media (max-width: 520px) {
+    .header {
+        @include header-520;
+    }
+
+    main {
+        max-width: 100vw;
+
+        .slider {
+            margin: 30px auto;
+            overflow: hidden;
+            max-width: 520px;
+
+            .slides {
+                width: 100%;
+                height: auto;
+                display: flex;
+                justify-content: space-between;
+
+                input {
+                    display: none;
+                }
+
+                #radio1:checked~.first {
+                    margin-left: 0;
+                }
+
+                #radio1:checked~.navigation .auto-btn1 {
+                    background-color: $cor-branco;
+                }
+
+                #radio2:checked~.first {
+                    margin-left: -100%;
+                }
+
+                #radio2:checked~.navigation .auto-btn2 {
+                    background-color: $cor-branco;
+                }
+
+                #radio3:checked~.first {
+                    margin-left: -200%;
+                }
+
+                #radio3:checked~.navigation .auto-btn3 {
+                    background-color: $cor-branco;
+                }
+
+                .slide {
+                    width: 100%;
+                    height: 100%;
+                    position: relative;
+                    transition: 1s;
+
+                    h2 {
+                        position: absolute;
+                        top: 20%;
+                        left: 20px;
+                        @include h2-mobile;
+                        color: $cor-branco;
+                        z-index: 998;
+                    }
+
+                    p {
+                        position: absolute;
+                        top: 45%;
+                        left: 20px;
+                        @include p-mobile;
+                        z-index: 998;
+                    }
+
+                    a {
+                        @include a-mobile ($cor-primaria, $cor-branco, auto);
+                        position: absolute;
+                        top: 65%;
+                        left: 20px;
+                        z-index: 998;
+                    }
+
+                    a:hover {
+                        background-color: $cor-secundaria;
+                        color: $cor-primaria;
+                    }
+
+                    img {
+                        width: 520px;
+                        filter: brightness(78%);
+                    }
+                }
+
+                .navigation {
+                    position: absolute;
+                    left: 0;
+                    width: 100%;
+                    margin-top: 322px;
+                    display: flex;
+                    gap: 22px;
+                    justify-content: center;
+
+                    div {
+                        padding: 5px;
+                        border-radius: 10px;
+                        cursor: pointer;
+                        transition: 1s;
+                    }
+                }
+            }
+
+            .manual__navigation {
+                position: absolute;
+                width: 100%;
+                left: 0;
+                margin-top: -30px;
+                display: flex;
+                gap: 20px;
+                justify-content: center;
+
+                .manual-btn {
+                    border: 1px solid $cor-branco;
+                    padding: 5px;
+                    border-radius: 10px;
+                    cursor: pointer;
+                    transition: 1s;
+                }
+
+                .manual-btn:hover {
+                    background-color: $cor-branco;
+                }
+            }
+        }
+    }
+}
