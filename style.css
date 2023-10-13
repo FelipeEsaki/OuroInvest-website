@@ -1033,7 +1033,7 @@ main .slider .manual__navigation .manual-btn:hover {
     width: 100%;
     margin: 50px auto;
     padding: 0px 50px;
-    background: linear-gradient(to top, #b6ad33, #fff);
+    background-color: #101820;
   }
   .third__section .third__section-container {
     margin: 0 auto;
@@ -1056,6 +1056,7 @@ main .slider .manual__navigation .manual-btn:hover {
     font-size: 1.5rem;
     font-weight: 600;
     color: #101820;
+    color: #fff !important;
   }
   .third__section .third__section-container .content .botoes {
     display: flex;
@@ -1081,7 +1082,7 @@ main .slider .manual__navigation .manual-btn:hover {
   }
   .third__section .third__section-container .content p {
     font-size: 1.2rem;
-    color: #101820;
+    color: #fff;
     font-weight: 400;
   }
   .third__section .third__section-container .content a {
