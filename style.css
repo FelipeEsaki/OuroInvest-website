@@ -1224,7 +1224,7 @@ main .slider .manual__navigation .manual-btn:hover {
 }
 .fifth__section {
   max-width: 100%;
-  margin: 0 auto;
+  margin: 30px auto;
   margin-top: 50px;
   padding: 50px 50px;
   display: flex;
@@ -1282,7 +1282,7 @@ main .slider .manual__navigation .manual-btn:hover {
 @media (max-width: 768px) {
   .fifth__section {
     max-width: 100%;
-    margin: 0 auto;
+    margin: 10px auto;
     margin-top: 50px;
     padding: 50px 50px;
     display: flex;
@@ -1346,7 +1346,7 @@ main .slider .manual__navigation .manual-btn:hover {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #b6ad33;
+  background-color: #101820;
   color: #fff;
 }
 #footer .footer__content {
@@ -1432,7 +1432,7 @@ main .slider .manual__navigation .manual-btn:hover {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #b6ad33;
+    background-color: #101820;
     color: #fff;
   }
   #footer .footer__content {
