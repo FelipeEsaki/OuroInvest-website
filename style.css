@@ -1161,7 +1161,7 @@ main .slider .manual__navigation .manual-btn:hover {
   font-weight: 400;
 }
 .fourth__section-image {
-  width: 40%;
+  width: 50%;
 }
 
 @media (max-width: 768px) {
@@ -1380,7 +1380,7 @@ main .slider .manual__navigation .manual-btn:hover {
 #footer .footer__content .footer__logo .icons a i {
   font-size: 1.5rem;
   margin: 0 10px;
-  color: #101820;
+  color: #fff;
   transition: 0.5s;
 }
 #footer .footer__content .footer__logo .icons a i:hover {
@@ -1391,7 +1391,7 @@ main .slider .manual__navigation .manual-btn:hover {
   flex-direction: column;
 }
 #footer .footer__content .footer__itens span {
-  color: #101820;
+  color: #fff;
   font-weight: 600;
   font-size: 1.2rem;
   margin-bottom: 20px;
@@ -1461,7 +1461,7 @@ main .slider .manual__navigation .manual-btn:hover {
   #footer .footer__content .footer__logo a i {
     font-size: 1.5rem;
     margin: 0 10px;
-    color: #101820;
+    color: #fff;
     transition: 0.5s;
   }
   #footer .footer__content .footer__logo a i:hover {
@@ -1472,7 +1472,7 @@ main .slider .manual__navigation .manual-btn:hover {
     flex-direction: column;
   }
   #footer .footer__content .footer__itens span {
-    color: #101820;
+    color: #fff;
     font-weight: 600;
     font-size: 1.2rem;
     margin-bottom: 10px;
@@ -1538,6 +1538,7 @@ main .slider .manual__navigation .manual-btn:hover {
 
 .second__section {
   display: flex;
+  padding: 0;
   margin: 100px auto;
 }
 .second__section .second-content {
@@ -1590,7 +1591,7 @@ main .slider .manual__navigation .manual-btn:hover {
   }
 }
 .servicos {
-  margin: 0 auto;
+  margin: 50px auto;
   max-width: 1400px;
   display: flex;
   justify-content: center;
@@ -1628,7 +1629,7 @@ main .slider .manual__navigation .manual-btn:hover {
 
 @media (max-width: 768px) {
   .servicos {
-    margin: 0 auto;
+    margin: 30px auto;
     max-width: 1400px;
     display: flex;
     justify-content: center;
@@ -1678,7 +1679,8 @@ main .slider .manual__navigation .manual-btn:hover {
   margin: 50px auto;
   display: flex;
   flex-direction: column;
-  background: linear-gradient(to right, #68a911, #84D916, #A5DF59);
+  background: url(assets/gold.jpg);
+  background-size: cover;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   padding: 40px;
   border-radius: 20px;
@@ -1954,7 +1956,8 @@ main .slider .manual__navigation .manual-btn:hover {
   height: 600px;
   display: flex;
   flex-direction: column;
-  background: linear-gradient(to right, #68a911, #84D916, #A5DF59);
+  background: url(assets/gold.jpg);
+  background-size: cover;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   padding: 20px;
   border-radius: 20px;

@@ -1,0 +1,175 @@
+.third__section {
+    width: 100%;
+    margin: 50px auto;
+    padding: 50px 50px;
+    background-color: $cor-secundaria;
+
+    .third__section-container {
+        margin: 0 auto;
+        max-width: 1200px;
+        padding: 50px 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+
+        .content {
+            width: 40%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 50px;
+
+            h2 {
+                text-align: center;
+                font-size: 2rem;
+                color: $cor-branco;
+                font-weight: 800;
+            }
+
+            .botoes {
+                display: flex;
+                gap: 20px;
+
+                .btn {
+                    border: 0;
+                    padding: 10px;
+                    border-radius: 5px;
+                    background-color: $cor-branco;
+                    color: $cor-primaria;
+                    font-size: 1rem;
+                    position: relative;
+                    cursor: pointer;
+                    transition: .5s;
+
+                    &:hover {
+                        transform: scale(1.1);
+                    }
+                }
+
+                .active {
+                    background-color: $cor-primaria;
+                    color: $cor-branco;
+                }
+            }
+
+            p {
+                font-size: 1.2rem;
+                color: $cor-branco;
+                font-weight: 3 00;
+            }
+
+            a {
+                @include a-default ($cor-primaria, $cor-branco, 300px);
+                z-index: 999;
+
+                &:hover {
+                    background-color: $cor-secundaria;
+                    color: $cor-primaria;
+                }
+            }
+
+        }
+
+        &-imagem {
+            width: 40%;
+            display: flex;
+            justify-content: flex-end;
+
+            #imagem-third {
+                width: 100%;
+            }
+
+        }
+    }
+}
+
+
+
+@media (max-width: 768px) {
+    .third__section {
+        width: 100%;
+        margin: 50px auto;
+        padding: 0px 50px;
+        background-color: $cor-secundaria;
+
+        .third__section-container {
+            margin: 0 auto;
+            max-width: 1200px;
+            padding: 50px 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+
+            .content {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                gap: 50px;
+
+                h2 {
+                    @include h2-mobile;
+                    color: $cor-branco !important;
+                }
+
+                .botoes {
+                    display: flex;
+                    gap: 20px;
+
+                    .btn {
+                        border: 0;
+                        padding: 10px;
+                        border-radius: 5px;
+                        background-color: $cor-branco;
+                        color: $cor-primaria;
+                        font-size: 1rem;
+                        position: relative;
+                        cursor: pointer;
+                        transition: .5s;
+
+                        &:hover {
+                            transform: scale(1.1);
+                        }
+                    }
+
+                    .active {
+                        background-color: $cor-primaria;
+                        color: $cor-branco;
+                    }
+                }
+
+                p {
+                    font-size: 1.2rem;
+                    color: $cor-branco;
+                    font-weight: 400;
+                }
+
+                a {
+                    @include a-mobile ($cor-branco, $cor-secundaria, 300px);
+                    z-index: 999;
+
+                    &:hover {
+                        background-color: $cor-secundaria;
+                        color: $cor-primaria;
+                    }
+                }
+
+            }
+
+            &-imagem {
+                margin-top: 20px;
+                width: 90%;
+                display: flex;
+                justify-content: flex-end;
+
+                #imagem-third {
+                    width: 100%;
+                }
+
+            }
+        }
+    }
+}

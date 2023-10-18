@@ -36,17 +36,23 @@ $cor-cinza: #a7a7a7;
 
             .info {
                 display: flex;
-                gap: 30px;
+                justify-content: center;
+                align-items: center;
+                gap: 40px;
+                text-align: center;
 
                 .informacoes {
-                    display: grid;
-                    grid-template-columns: 1fr 2fr;
-                    grid-template-rows: 1fr 1fr;
-                    justify-items: center;
+                    display: flex;
                     align-items: center;
-                    grid-template-areas:
-                        'icone p'
-                        'icone spann';
+                    gap: 10px;
+
+                    .info-content {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: center;
+                        gap: 10px;
+                    }
 
                     i {
                         grid-area: icone;
@@ -55,7 +61,6 @@ $cor-cinza: #a7a7a7;
 
                     p {
                         grid-area: p;
-                        margin-bottom: 10px;
                         color: $cor-cinza;
                         font-weight: 400;
                     }
@@ -151,39 +156,33 @@ $cor-cinza: #a7a7a7;
                 justify-content: center;
                 height: 100px;
                 align-items: center;
-                gap: 0px;
+                gap: 20px;
+                text-align: center;
 
                 .informacoes {
-                    margin: 20px auto;
-                    width: 100%;
-                    display: grid;
-                    grid-template-columns: 1fr 2fr;
-                    grid-template-rows: 1fr 1fr;
-                    justify-items: center;
+                    display: flex;
                     align-items: center;
-                    grid-template-areas:
-                        'icone p'
-                        'icone spann';
+                    gap: 10px;
+
+                    .info-content {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: center;
+                    }
 
                     i {
-                        grid-area: icone;
                         font-size: 1rem;
                     }
 
                     p {
-                        text-align: center;
                         font-size: .8rem;
-                        grid-area: p;
-                        margin-bottom: 10px;
                         color: $cor-cinza;
                         font-weight: 400;
                     }
 
                     span {
-                        align-self: start;
-                        text-align: center;
                         font-size: .7rem;
-                        grid-area: spann;
                         font-weight: 600;
                     }
                 }
@@ -268,7 +267,7 @@ $cor-cinza: #a7a7a7;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: $cor-primaria;
+    background-color: $cor-secundaria;
     color: $cor-branco;
 
     .footer__content {
@@ -304,7 +303,7 @@ $cor-cinza: #a7a7a7;
                 a i {
                     font-size: 1.5rem;
                     margin: 0 10px;
-                    color: $cor-secundaria;
+                    color: $cor-branco;
                     transition: .5s;
 
                     &:hover {
@@ -320,7 +319,7 @@ $cor-cinza: #a7a7a7;
             flex-direction: column;
 
             span {
-                color: $cor-secundaria;
+                color: $cor-branco;
                 font-weight: 600;
                 font-size: 1.2rem;
                 margin-bottom: 20px;
@@ -373,7 +372,7 @@ $cor-cinza: #a7a7a7;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: $cor-primaria;
+    background-color: $cor-secundaria;
     color: $cor-branco;
 
     .footer__content {
@@ -402,7 +401,7 @@ $cor-cinza: #a7a7a7;
             a i {
                 font-size: 1.5rem;
                 margin: 0 10px;
-                color: $cor-secundaria;
+                color: $cor-branco;
                 transition: .5s;
 
                 &:hover {
@@ -416,7 +415,7 @@ $cor-cinza: #a7a7a7;
             flex-direction: column;
 
             span {
-                color: $cor-secundaria;
+                color: $cor-branco;
                 font-weight: 600;
                 font-size: 1.2rem;
                 margin-bottom: 10px;
